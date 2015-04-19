@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="studentDataSet" targetNamespace="http://tempuri.org/studentDataSet.xsd" xmlns:mstns="http://tempuri.org/studentDataSet.xsd" xmlns="http://tempuri.org/studentDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="studentConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="studentConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.test1.Properties.Settings.GlobalReference.Default.studentConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="managerTableAdapter" GeneratorDataComponentClassName="managerTableAdapter" Name="manager" UserDataComponentName="managerTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="studentConnectionString (Settings)" DbObjectName="student.dbo.manager" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT manname FROM dbo.manager</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="manname" DataSetColumn="manname" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="studentTableAdapter" GeneratorDataComponentClassName="studentTableAdapter" Name="student" UserDataComponentName="studentTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="studentConnectionString (Settings)" DbObjectName="student.dbo.student" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT stupname FROM dbo.student</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="stupname" DataSetColumn="stupname" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="teacherTableAdapter" GeneratorDataComponentClassName="teacherTableAdapter" Name="teacher" UserDataComponentName="teacherTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="studentConnectionString (Settings)" DbObjectName="student.dbo.teacher" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT teacpname FROM dbo.teacher</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="teacpname" DataSetColumn="teacpname" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="studentDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="studentDataSet" msprop:Generator_UserDSName="studentDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="manager" msprop:Generator_TableClassName="managerDataTable" msprop:Generator_TableVarName="tablemanager" msprop:Generator_TablePropName="manager" msprop:Generator_RowDeletingName="managerRowDeleting" msprop:Generator_UserTableName="manager" msprop:Generator_RowChangingName="managerRowChanging" msprop:Generator_RowEvHandlerName="managerRowChangeEventHandler" msprop:Generator_RowDeletedName="managerRowDeleted" msprop:Generator_RowEvArgName="managerRowChangeEvent" msprop:Generator_RowChangedName="managerRowChanged" msprop:Generator_RowClassName="managerRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="manname" msprop:Generator_ColumnVarNameInTable="columnmanname" msprop:Generator_ColumnPropNameInRow="manname" msprop:Generator_ColumnPropNameInTable="mannameColumn" msprop:Generator_UserColumnName="manname">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="student" msprop:Generator_TableClassName="studentDataTable" msprop:Generator_TableVarName="tablestudent" msprop:Generator_TablePropName="student" msprop:Generator_RowDeletingName="studentRowDeleting" msprop:Generator_UserTableName="student" msprop:Generator_RowChangingName="studentRowChanging" msprop:Generator_RowEvHandlerName="studentRowChangeEventHandler" msprop:Generator_RowDeletedName="studentRowDeleted" msprop:Generator_RowEvArgName="studentRowChangeEvent" msprop:Generator_RowChangedName="studentRowChanged" msprop:Generator_RowClassName="studentRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="stupname" msprop:Generator_ColumnVarNameInTable="columnstupname" msprop:Generator_ColumnPropNameInRow="stupname" msprop:Generator_ColumnPropNameInTable="stupnameColumn" msprop:Generator_UserColumnName="stupname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="teacher" msprop:Generator_TableClassName="teacherDataTable" msprop:Generator_TableVarName="tableteacher" msprop:Generator_TablePropName="teacher" msprop:Generator_RowDeletingName="teacherRowDeleting" msprop:Generator_UserTableName="teacher" msprop:Generator_RowChangingName="teacherRowChanging" msprop:Generator_RowEvHandlerName="teacherRowChangeEventHandler" msprop:Generator_RowDeletedName="teacherRowDeleted" msprop:Generator_RowEvArgName="teacherRowChangeEvent" msprop:Generator_RowChangedName="teacherRowChanged" msprop:Generator_RowClassName="teacherRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="teacpname" msprop:Generator_ColumnVarNameInTable="columnteacpname" msprop:Generator_ColumnPropNameInRow="teacpname" msprop:Generator_ColumnPropNameInTable="teacpnameColumn" msprop:Generator_UserColumnName="teacpname">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FDD2EB82-419F-457E-A23B-CB6E7F87BA98}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>test1</RootNamespace>
+    <AssemblyName>test1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>test1.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aboutForm.Designer.cs">
+      <DependentUpon>aboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addmanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addmanForm.Designer.cs">
+      <DependentUpon>addmanForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addstuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addstuForm.Designer.cs">
+      <DependentUpon>addstuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addteacForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addteacForm.Designer.cs">
+      <DependentUpon>addteacForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chooseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chooseForm.Designer.cs">
+      <DependentUpon>chooseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="countForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="countForm.Designer.cs">
+      <DependentUpon>countForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addgradeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addgradeForm.Designer.cs">
+      <DependentUpon>addgradeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kaisheForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kaisheForm.Designer.cs">
+      <DependentUpon>kaisheForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginForm.Designer.cs">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modifygradeFram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modifygradeFram.Designer.cs">
+      <DependentUpon>modifygradeFram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modifymanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modifymanForm.Designer.cs">
+      <DependentUpon>modifymanForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modifymimaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modifymimaForm.Designer.cs">
+      <DependentUpon>modifymimaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modifystuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modifystuForm.Designer.cs">
+      <DependentUpon>modifystuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modifyteacForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modifyteacForm.Designer.cs">
+      <DependentUpon>modifyteacForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="searchclassForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchclassForm.Designer.cs">
+      <DependentUpon>searchclassForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="searchgradeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchgradeForm.Designer.cs">
+      <DependentUpon>searchgradeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="showkebiaoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="showkebiaoForm.Designer.cs">
+      <DependentUpon>showkebiaoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="studentDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>studentDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="studentDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>studentDataSet1.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="aboutForm.resx">
+      <DependentUpon>aboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addmanForm.resx">
+      <DependentUpon>addmanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addstuForm.resx">
+      <DependentUpon>addstuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addteacForm.resx">
+      <DependentUpon>addteacForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chooseForm.resx">
+      <DependentUpon>chooseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="countForm.resx">
+      <DependentUpon>countForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addgradeForm.resx">
+      <DependentUpon>addgradeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kaisheForm.resx">
+      <DependentUpon>kaisheForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginForm.resx">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modifygradeFram.resx">
+      <DependentUpon>modifygradeFram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modifymanForm.resx">
+      <DependentUpon>modifymanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modifymimaForm.resx">
+      <DependentUpon>modifymimaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modifystuForm.resx">
+      <DependentUpon>modifystuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modifyteacForm.resx">
+      <DependentUpon>modifyteacForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="searchclassForm.resx">
+      <DependentUpon>searchclassForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchgradeForm.resx">
+      <DependentUpon>searchgradeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="showkebiaoForm.resx">
+      <DependentUpon>showkebiaoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="studentDataSet.xsc">
+      <DependentUpon>studentDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="studentDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>studentDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="studentDataSet.xss">
+      <DependentUpon>studentDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="studentDataSet1.xsc">
+      <DependentUpon>studentDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="studentDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>studentDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="studentDataSet1.xss">
+      <DependentUpon>studentDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\psb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
